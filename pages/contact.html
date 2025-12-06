@@ -14,26 +14,28 @@
     <link rel="stylesheet" href="../css/contact.css" />
   </head>
   <body>
-    <nav aria-label="Main navigation">
-      <a href="../index.html" class="brand">RJ</a>
+    <header>
+      <nav aria-label="Main navigation">
+        <a href="../index.html" class="brand">RJ</a>
 
-      <input
-        type="checkbox"
-        id="nav-toggle"
-        class="nav-toggle"
-        aria-hidden="true"
-      />
-      <label for="nav-toggle" class="nav-toggle-label">
-        <span class="sr-only">Toggle navigation</span>
-        ☰
-      </label>
+        <input
+          type="checkbox"
+          id="nav-toggle"
+          class="nav-toggle"
+          aria-hidden="true"
+        />
+        <label for="nav-toggle" class="nav-toggle-label">
+          <span class="sr-only">Toggle navigation</span>
+          ☰
+        </label>
 
-      <ul class="nav-links">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
     <main class="contact">
       <h1>Contact Rachel's Business</h1>
@@ -43,7 +45,7 @@
             <img
               class="contact-image"
               role="img"
-              aria-label="a placeholder image for Rachel's business"
+              alt="a placeholder image for Rachel's business employees"
             />
             <figcaption>
               Fig.1 - The team, responding to contact forms
@@ -90,9 +92,36 @@
       <div id="footer-left">&copy; Rachel's Site. All rights reserved.</div>
       <div id="footer-center">Socials taken from icons8.com</div>
       <div id="footer-right">
-        <img src="../img/icons8-linkedin-48.gif" alt="linkedin" />
-        <img src="../img/icons8-instagram-48.gif" alt="instagram" />
-        <img src="../img/icons8-twitter-bird.gif" alt="twitter" />
+        <a
+          href="https://linkedin.com"
+          aria-label="Rachel's business LinkedIn profile"
+          target="_blank"
+        >
+          <img
+            src="../img/icons8-linkedin-48.gif"
+            alt="Business LinkedIn social link"
+          />
+        </a>
+        <a
+          href="https://instagram.com"
+          aria-label="Rachel's business Instagram profile"
+          target="_blank"
+        >
+          <img
+            src="../img/icons8-instagram-48.gif"
+            alt="Business Instagram social link"
+          />
+        </a>
+        <a
+          href="https://twitter.com"
+          aria-label="Rachel's business Twitter profile"
+          target="_blank"
+        >
+          <img
+            src="../img/icons8-twitter-bird.gif"
+            alt="Busniess Twtter social link"
+          />
+        </a>
       </div>
     </footer>
   </body>

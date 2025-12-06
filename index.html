@@ -14,46 +14,50 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <nav aria-label="Main navigation">
-      <a href="#" class="brand">RJ</a>
+    <header>
+      <nav aria-label="Main navigation">
+        <a href="#" class="brand">RJ</a>
 
-      <input
-        type="checkbox"
-        id="nav-toggle"
-        class="nav-toggle"
-        aria-hidden="true"
-      />
-      <label for="nav-toggle" class="nav-toggle-label">
-        <span class="sr-only">Toggle navigation</span>
-        ☰
-      </label>
+        <input
+          type="checkbox"
+          id="nav-toggle"
+          class="nav-toggle"
+          aria-hidden="true"
+        />
+        <label for="nav-toggle" class="nav-toggle-label">
+          <span class="sr-only">Toggle navigation</span>
+          ☰
+        </label>
 
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="./pages/contact.html">Contact</a></li>
-      </ul>
-    </nav>
+        <ul class="nav-links">
+          <li><a href="#" aria-current="page">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="./pages/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
     <main class="container">
-      <h1>Welcome to Rachel's Business</h1>
-      <section id="intro">
-        <h2>Enjoy the developer ipsum</h2>
-        <p>
-          As soon as we started programming, we found to our surprise that it
-          wasn’t as easy to get programs right as we had thought.
-          <strong>Debugging had to be discovered.</strong> I can remember the
-          exact instant when I realized that a large part of my life from then
-          on was going to be spent in finding mistakes in my own programs.
-          (Maurice Wilkes discovers debugging, 1949) If debugging is the process
-          of removing software bugs, then programming must be the process of
-          putting them in. (Edsger Dijkstra) Software is like: It’s better when
-          it’s free. (Linus Torvalds) Most of you are familiar with the virtues
-          of a programmer.
-        </p>
+      <section>
+        <h1>Welcome to Rachel's Business</h1>
+        <article id="intro">
+          <h2>Enjoy the developer ipsum</h2>
+          <p>
+            As soon as we started programming, we found to our surprise that it
+            wasn’t as easy to get programs right as we had thought.
+            <strong>Debugging had to be discovered.</strong> I can remember the
+            exact instant when I realized that a large part of my life from then
+            on was going to be spent in finding mistakes in my own programs.
+            (Maurice Wilkes discovers debugging, 1949) If debugging is the
+            process of removing software bugs, then programming must be the
+            process of putting them in. (Edsger Dijkstra) Software is like: It’s
+            better when it’s free. (Linus Torvalds) Most of you are familiar
+            with the virtues of a programmer.
+          </p>
+        </article>
       </section>
       <section id="contents">
-        <div class="content">
+        <article class="content">
           <h2>We sing</h2>
           <p>
             There are three, of course:
@@ -67,8 +71,8 @@
             calculated with micrometric precisions from vague assumptions based
             on debatable figures
           </p>
-        </div>
-        <div class="content">
+        </article>
+        <article class="content">
           <h2>We dance</h2>
           <p>
             taken from inconclusive documents and carried out on instruments of
@@ -80,8 +84,8 @@
             support for a lifetime. (Michael Sinz) I’ve finally learned what
             ‘upward compatible’ means.
           </p>
-        </div>
-        <div class="content">
+        </article>
+        <article class="content">
           <h2>We play</h2>
           <p>
             It means we get to keep all our old mistakes. (Dennie van Tassel)
@@ -92,7 +96,7 @@
             <em>Computers are useless. They can only give you answers.</em>
             (Pablo Picasso)
           </p>
-        </div>
+        </article>
       </section>
     </main>
 
@@ -100,9 +104,36 @@
       <div id="footer-left">&copy; Rachel's Site. All rights reserved.</div>
       <div id="footer-center">Socials taken from icons8.com</div>
       <div id="footer-right">
-        <img src="./img/icons8-linkedin-48.gif" alt="linkedin" />
-        <img src="./img/icons8-instagram-48.gif" alt="instagram" />
-        <img src="./img/icons8-twitter-bird.gif" alt="twitter" />
+        <a
+          href="https://linkedin.com"
+          aria-label="Rachel's Busniess LinkedIn profile"
+          target="_blank"
+        >
+          <img
+            src="./img/icons8-linkedin-48.gif"
+            alt="Business LinkedIn social link"
+          />
+        </a>
+        <a
+          href="https://instagram.com"
+          aria-label="Rachel's Business Instagram profile"
+          target="_blank"
+        >
+          <img
+            src="./img/icons8-instagram-48.gif"
+            alt="Business Instagram social link"
+          />
+        </a>
+        <a
+          href="https://twitter.com"
+          aria-label="Rachel's Business Twitter profile"
+          target="_blank"
+        >
+          <img
+            src="./img/icons8-twitter-bird.gif"
+            alt="Busniess Twtter social link"
+          />
+        </a>
       </div>
     </footer>
   </body>
