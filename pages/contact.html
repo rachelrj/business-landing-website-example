@@ -42,11 +42,23 @@
       <div id="contact-container">
         <section id="contact-image-container">
           <figure>
-            <img
-              class="contact-image"
-              role="img"
-              alt="a placeholder image for Rachel's business employees"
-            />
+            <picture>
+              <source
+                media="(min-width: 700px)"
+                srcset="https://placehold.co/400x600"
+              />
+
+              <source
+                media="(max-width: 699px)"
+                srcset="https://placehold.co/320x90"
+              />
+
+              <img
+                class="contact-image"
+                src="https://placehold.co/320x90"
+                alt="A placeholder image representing Rachel's business employees"
+              />
+            </picture>
             <figcaption>
               Fig.1 - The team, responding to contact forms
             </figcaption>
