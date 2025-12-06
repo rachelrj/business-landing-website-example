@@ -1,0 +1,108 @@
+#contact-container {
+  display: grid;
+  grid-template-areas:
+    "image"
+    "form";
+  gap: 2rem;
+
+  padding: 2rem 1rem;
+}
+
+#contact-image-container {
+  grid-area: image;
+}
+
+#contact-form-container {
+  grid-area: form;
+}
+
+.contact-image {
+  width: 320px;
+  height: 90px;
+  background-image: url("https://placehold.co/320x90");
+  background-size: cover;
+  background-position: center;
+  border-radius: 4px;
+  margin: auto;
+}
+
+#contact-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  color: #333;
+  gap: 0.25rem;
+}
+
+#contact-form input,
+#contact-form textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: white;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+  outline: 2px solid #99caff;
+  border-color: #66aaff;
+}
+
+.submit-button {
+  padding: 0.75rem 1rem;
+  background: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.submit-button:hover {
+  background: #005fa3;
+}
+
+.submit-button:active {
+  background: #004a82;
+}
+
+#contact-form {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin: auto;
+}
+
+#contact-form label {
+  font-size: 1.5rem;
+}
+
+@media (min-width: 700px) {
+  #contact-container {
+    grid-template-areas: "image form";
+    gap: 1rem;
+    padding: 2rem 1rem;
+  }
+  .contact-image {
+    width: 350px;
+    height: 500px;
+    background-image: url("https://placehold.co/350x500");
+  }
+  #contact-form {
+    gap: 50px;
+  }
+
+  #contact-form input,
+  #contact-form textarea {
+    font-size: 1.5rem;
+  }
+
+  .submit-btn {
+    width: fit-content;
+    align-self: flex-start;
+  }
+}

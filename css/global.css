@@ -1,0 +1,20 @@
+@import url("./nav.css");
+@import url("./footer.css");
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  box-sizing: border-box;
+  background-color: #eef7ff;
+  color: #000;
+}
+
+h1 {
+  text-align: center;
+}
+
+main,
+section,
+div {
+  background-color: transparent;
+}

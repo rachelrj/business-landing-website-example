@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Sample Rachel Business</title>
+    <meta
+      name="description"
+      content="A sample business website for a Udacity project"
+    />
+    <meta name="author" content="Rachel Joyce" />
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/contact.css" />
+  </head>
+  <body>
+    <nav aria-label="Main navigation">
+      <a href="../index.html" class="brand">RJ</a>
+
+      <input
+        type="checkbox"
+        id="nav-toggle"
+        class="nav-toggle"
+        aria-hidden="true"
+      />
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span class="sr-only">Toggle navigation</span>
+        ☰
+      </label>
+
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main class="contact">
+      <h1>Contact Rachel's Business</h1>
+      <div id="contact-container">
+        <section id="contact-image-container">
+          <div
+            class="contact-image"
+            role="img"
+            aria-label="a placeholder image for Rachel's business"
+          ></div>
+        </section>
+        <section id="contact-form-container">
+          <form id="contact-form">
+            <label for="contact-name">
+              Name
+              <input type="text" name="name" id="contact-name" required />
+            </label>
+
+            <!-- Used Google for email regex (even though some validation is built in) -->
+            <label for="contact-email">
+              Email
+              <input
+                type="email"
+                name="email"
+                id="contact-email"
+                required
+                pattern="^[^\s@]+@[^\s@]+\.[^\s@]{2,}$"
+                title="Please enter a valid email address (e.g., name@example.com)"
+              />
+            </label>
+
+            <label for="contact-message">
+              Message
+              <textarea
+                name="message"
+                id="contact-message"
+                rows="5"
+                required
+              ></textarea>
+            </label>
+
+            <button type="submit" class="submit-button">Send</button>
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div id="footer-left">&copy; Rachel's Site. All rights reserved.</div>
+      <div id="footer-center">Socials taken from icons8.com</div>
+      <div id="footer-right">
+        <img src="../img/icons8-linkedin-48.gif" alt="linkedin" />
+        <img src="../img/icons8-instagram-48.gif" alt="instagram" />
+        <img src="../img/icons8-twitter-bird.gif" alt="twitter" />
+      </div>
+    </footer>
+  </body>
+</html>
